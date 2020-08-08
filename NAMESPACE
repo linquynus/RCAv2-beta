@@ -3,6 +3,7 @@
 export(VioplotQCForCluster)
 export(buildReferencePanel)
 export(computeUMAP)
+export(ComputePairWiseDE)
 export(createRCAObject)
 export(createRCAObjectFrom10X)
 export(dataClust)

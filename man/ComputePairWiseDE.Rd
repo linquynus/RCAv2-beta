@@ -98,6 +98,3 @@ list downregulatedDEGeneList: list of cluster-specific downregulated DE genes
 \description{
 Find markers (differentially expressed genes) between two group of cells.
 }
-\author{
-Ignasius Joanito (Modified from Seurat FindMarkers)
-}

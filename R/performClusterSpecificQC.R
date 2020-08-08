@@ -114,6 +114,10 @@ performClusterSpecificQC <- function(rca.obj, cluster.labels, nGene.low.threshol
     rca.obj$raw.data <- rca.obj$raw.data[, cellIndexToKeep]
     rca.obj$data <- rca.obj$data[, cellIndexToKeep]
 
+    if(!is.null(rca.obj$projection.data)) {
+        rca.obj$projection.data <- rca.obj$projection.data[, cellIndexToKeep]
+    }
+
     # Subset cluster labels
     for(i in 1:length(rca.obj$clustering.out$dynamicColorsList)) {
         rca.obj$clustering.out$dynamicColorsList[[i]] <- rca.obj$clustering.out$dynamicColorsList[[i]][cellIndexToKeep]
